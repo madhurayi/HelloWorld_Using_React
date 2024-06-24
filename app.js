@@ -1,11 +1,5 @@
-/**
- *  <div id="parent">
- *      <div id="child">
- *          <h1>I am h1 tag </h1>
- *         </div>
- *  </div>
- */
-
+import React from "react"
+import ReactDOM from "react-dom/client"
 const parent=React.createElement(
     "div",
     {id: "parent"},
@@ -15,15 +9,22 @@ const parent=React.createElement(
         [ React.createElement(
             "h1",
             {id:"h1"},
-            "I am h1 tag"
+            "I am h2 tag"
         ),
         React.createElement(
             "h2",
             {id:"h2"},
-            "I am h2 tag"
+            "I am madhu"
+        ),
+        ,
+        React.createElement(
+            "h3",
+            {id:"h2"},
+            "I am priya"
         )]
     )
 )
+
 console.log(parent);
 
 const root= ReactDOM.createRoot(document.getElementById("root"));  
